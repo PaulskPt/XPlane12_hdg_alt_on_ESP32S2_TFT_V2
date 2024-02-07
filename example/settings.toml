@@ -1,0 +1,36 @@
+# To auto-connect to Wi-Fi
+CIRCUITPY_WIFI_SSID=""
+CIRCUITPY_WIFI_PASSWORD="" 
+CIRCUITPY_WEB_API_PORT=80
+CIRCUITPY_WEB_API_PASSWORD=""
+WIFI_IP="192.168.X.XXX"
+WIFI_NETMASK="255.255.255.0"
+WIFI_GATEWAY="192.168.X.X"
+WIFI_DNS="8.8.8.8"
+timezone="Europe/Lisbon" # http=//worldtimeapi.org/timezones
+tz_offset="3600"
+# timezone="America/New_York"
+# tz_offset="-14400"
+# timezone="America/Kentucky/Louisville"
+# tz_offset="-18000"
+SPEED_RUN="1" # No calls to disp_bat, disp_dt, disp_auth etc.
+DEBUG_FLAG="0" # No debug
+LOCAL_TIME_FLAG="1"
+NTP_LOCAL_FLAG= "1"
+NTP_LOCAL_URL="pt.pool.ntp.org"
+AUTHOR1="(c)2024 Paulus"
+AUTHOR2="Schulinck"
+AUTHOR3="@PaulskPt"
+HELP="0" # INSTEAD OF COMMANLINE OPTION - Boolean. Show Help or not
+MULTICAST_GROUP1="235.255.1.1"  # INSTEAD OF COMMANLINE OPTION
+MULTICAST_GROUP2="239.255.1.1" # was: 192.168.1.255"  # this works
+MULTICAST_PORT1="49707"  # was: 49002 INSTEAD OF COMMANDLINE OPTION
+MULTICAST_PORT2="49707"
+# XPlaneConnector see: https://github.com/MaxFerretti/XPlaneConnector
+XPLANECONNECTOR_IP="127.0.0.1" # or "192.168.1.96"
+XPLANECONNECTOR_PORT="49000"
+lDME="0" #  INSTEAD OF COMMANDLINE OPTION - Boolean. Display DME-3 frequency or not (Either lDME or lGROUNDSPEED has to be True)
+lGROUNDSPEED="1"  # INSTEAD OF COMMANDLINE OPTION - Boolean. Display GROUNDSPEED
+USE_UDP_HOST="1" # if "1": receive to device IP-address, port 49002. If "0" Receive udp packets to MULTICAST_GROUP "239.255.1.1", port 49707.
+PACKET_TYPES_USED="['XGPS']"   # or "['XGPS', 'XATT', 'XTRA']"
+MSFS2020_VERSION="1.32.7.0"
